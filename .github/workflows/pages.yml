@@ -52,8 +52,8 @@ jobs:
 
           docs_dir = Path("docs")
           index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
-            if "/daughters-of-khaine-stats/assets/" not in index_html:
-              raise SystemExit("Published site is missing the GitHub Pages asset base path.")
+          if "/daughters-of-khaine-stats/assets/" not in index_html:
+            raise SystemExit("Published site is missing the GitHub Pages asset base path.")
 
           payload = json.loads((docs_dir / "data" / "site-data.json").read_text(encoding="utf-8"))
           default_dataset_key = payload["defaultDatasetKey"]
