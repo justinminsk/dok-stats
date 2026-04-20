@@ -1,0 +1,1813 @@
+{
+  "generatedAt": "2026-04-20 15:51:17 Mountain Daylight Time",
+  "defaultDatasetKey": "current",
+  "scopeOrder": [
+    "combined",
+    "singles",
+    "teams"
+  ],
+  "scopeLabels": {
+    "combined": "Combined",
+    "singles": "Singles",
+    "teams": "Teams"
+  },
+  "uiConfig": {
+    "hashPrefix": "#tab=",
+    "listRowsBatchSize": 20,
+    "listFilterInputDebounceMs": 140,
+    "themeStorageKey": "daughtersTheme",
+    "maxArchivedSnapshots": 3
+  },
+  "themeTokens": {
+    "dark": {
+      "colorBg": "#0f0b08",
+      "colorBgElevated": "#1e1409",
+      "colorBgMuted": "#0c0807",
+      "colorBgInput": "#17100a",
+      "colorBgInputHover": "#1e1409",
+      "colorText": "#fff7ef",
+      "colorTextSoft": "#f1e6da",
+      "colorMuted": "#d2beab",
+      "colorAccent": "#c8921a",
+      "colorAccentStrong": "#dcaa32",
+      "colorAccentRgb": "200, 146, 26",
+      "colorSurface": "#181009",
+      "colorBorder": "#5e4225",
+      "colorFocus": "#00c8a8",
+      "colorOverlay": "rgba(12, 8, 5, .93)",
+      "colorTeal": "#00c8a8",
+      "colorMagenta": "#c84090"
+    },
+    "light": {
+      "colorBg": "#f9f4ee",
+      "colorBgElevated": "#ffffff",
+      "colorBgMuted": "#f2ebe2",
+      "colorBgInput": "#ffffff",
+      "colorBgInputHover": "#fcf8f3",
+      "colorText": "#2e2118",
+      "colorTextSoft": "#3f2d21",
+      "colorMuted": "#5a4333",
+      "colorAccent": "#7a4e0e",
+      "colorAccentStrong": "#63400b",
+      "colorAccentRgb": "122, 78, 14",
+      "colorSurface": "#ffffff",
+      "colorBorder": "#ddc8b5",
+      "colorFocus": "#006e5a",
+      "colorOverlay": "rgba(249, 244, 238, .95)",
+      "colorTeal": "#007a68",
+      "colorMagenta": "#a0306e"
+    }
+  },
+  "datasets": [
+    {
+      "key": "current",
+      "label": "Current",
+      "reportBasePath": "reports/current",
+      "scopes": [
+        {
+          "key": "combined",
+          "label": "Combined",
+          "datasetKey": "current",
+          "listCount": 4,
+          "reportLinks": {
+            "stats": "reports/current/combined.md",
+            "lists": "reports/current/combined-lists.md"
+          },
+          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Blood Sisters in 3 lists (75.0%). Most common subfaction is Coven of Blood (2 lists). Highest model count unit is Blood Sisters (22 models).",
+          "filters": {
+            "results": [
+              "4-1",
+              "5-0"
+            ],
+            "subfactions": [
+              "Cauldron Guard",
+              "Coven of Blood",
+              "Coven Zealots"
+            ]
+          },
+          "story": {
+            "coreSignals": [
+              {
+                "label": "Top subfaction",
+                "value": "Coven of Blood",
+                "detail": "2 of 4 lists"
+              },
+              {
+                "label": "Top manifestation lore",
+                "value": "Manifestations of Khaine",
+                "detail": "3 of 4 lists"
+              },
+              {
+                "label": "Most shared unit",
+                "value": "Blood Sisters",
+                "detail": "3 of 4 lists (75.0%)"
+              },
+              {
+                "label": "Most repeated package",
+                "value": "Blood Sisters + Sisters of Slaughter",
+                "detail": "3 of 4 lists (75.0%)"
+              }
+            ],
+            "sharedUnits": [
+              {
+                "name": "Blood Sisters",
+                "listCount": 3,
+                "share": "75.0%"
+              },
+              {
+                "name": "Morathi-Khaine",
+                "listCount": 3,
+                "share": "75.0%"
+              },
+              {
+                "name": "Sisters of Slaughter",
+                "listCount": 3,
+                "share": "75.0%"
+              },
+              {
+                "name": "Slaughter Queen on Cauldron of Blood",
+                "listCount": 3,
+                "share": "75.0%"
+              },
+              {
+                "name": "Blood Hags",
+                "listCount": 2,
+                "share": "50.0%"
+              }
+            ],
+            "sharedUnitPairs": [
+              {
+                "units": [
+                  "Blood Sisters",
+                  "Sisters of Slaughter"
+                ],
+                "listCount": 3,
+                "share": "75.0%"
+              },
+              {
+                "units": [
+                  "Blood Hags",
+                  "Blood Sisters"
+                ],
+                "listCount": 2,
+                "share": "50.0%"
+              },
+              {
+                "units": [
+                  "Blood Hags",
+                  "Morathi-Khaine"
+                ],
+                "listCount": 2,
+                "share": "50.0%"
+              },
+              {
+                "units": [
+                  "Blood Hags",
+                  "Sisters of Slaughter"
+                ],
+                "listCount": 2,
+                "share": "50.0%"
+              }
+            ],
+            "weeklyTrends": [],
+            "snapshotTrends": []
+          },
+          "statsTables": [
+            {
+              "key": "resultBreakdown",
+              "title": "Result breakdown",
+              "headers": [
+                "Result",
+                "Lists"
+              ],
+              "rows": [
+                [
+                  "4-1",
+                  "2"
+                ],
+                [
+                  "5-0",
+                  "2"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitPresence",
+              "title": "Top unit presence",
+              "headers": [
+                "Unit",
+                "Lists",
+                "% of lists"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "3",
+                  "75.0%"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "3",
+                  "75.0%"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "3",
+                  "75.0%"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "3",
+                  "75.0%"
+                ],
+                [
+                  "Blood Hags",
+                  "2",
+                  "50.0%"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2",
+                  "50.0%"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "2",
+                  "50.0%"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "2",
+                  "50.0%"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1",
+                  "25.0%"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1",
+                  "25.0%"
+                ],
+                [
+                  "Witch Aelves",
+                  "1",
+                  "25.0%"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1",
+                  "25.0%"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitEntries",
+              "title": "Top unit entries",
+              "headers": [
+                "Unit",
+                "Entries"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "4"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "4"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "4"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "3"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "3"
+                ],
+                [
+                  "Blood Hags",
+                  "2"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "2"
+                ],
+                [
+                  "Sisters of Slaughter with Bladed Bucklers",
+                  "2"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topModelCounts",
+              "title": "Top model counts",
+              "headers": [
+                "Unit",
+                "Models"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "22"
+                ],
+                [
+                  "Witch Aelves",
+                  "20"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "13"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "12"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "3"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "3"
+                ],
+                [
+                  "Blood Hags",
+                  "2"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "2"
+                ],
+                [
+                  "Sisters of Slaughter with Bladed Bucklers",
+                  "2"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topSubfactions",
+              "title": "Top subfactions",
+              "headers": [
+                "Subfaction",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Coven of Blood",
+                  "2"
+                ],
+                [
+                  "Coven Zealots",
+                  "1"
+                ],
+                [
+                  "Cauldron Guard",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "manifestationLores",
+              "title": "Manifestation lores",
+              "headers": [
+                "Manifestation lore",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Manifestations of Khaine",
+                  "3"
+                ],
+                [
+                  "Unknown",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "artifacts",
+              "title": "Artifacts",
+              "headers": [
+                "Artifact",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "commandTraits",
+              "title": "Command traits",
+              "headers": [
+                "Command trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "warmachineTraits",
+              "title": "Warmachine traits",
+              "headers": [
+                "Warmachine trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "unplayedKnownUnits",
+              "title": "Unplayed known units",
+              "headers": [
+                "Unit",
+                "Unit size"
+              ],
+              "rows": []
+            }
+          ],
+          "lists": [
+            {
+              "index": 0,
+              "source": "Teams",
+              "weekLabel": "April 13 - 19",
+              "name": "Coven of Blood 2000/2000 pts",
+              "result": "5-0",
+              "subfaction": "Coven of Blood",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 2,
+              "unitEntries": 8,
+              "models": 8,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 730,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Heartrenders",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Hand of Khaine",
+                    "Witchbrew"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Blood Hags",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "source": "Singles",
+              "weekLabel": "April 13 - 19",
+              "name": "Daughters of Khorne with a buff like lumineth but with requirements... 1930/2000 pts",
+              "result": "4-1",
+              "subfaction": "Coven of Blood",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 2,
+              "unitEntries": 8,
+              "models": 8,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 730,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Stalkers",
+                  "points": 150,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen",
+                  "points": 130,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Witchbrew",
+                    "Shadow-Blooded"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Blood Hags",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "High Gladiatrix",
+                  "points": 120,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "*Nick Swope - Look if any of y'all know a giant spellcasting and 50ft tall murder goddess and havent introduced me or set up a date for me I will be extremely disappointed.**"
+                  ]
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "source": "Teams",
+              "weekLabel": "April 13 - 19",
+              "name": "Last ride of the immortal Queen 1990/2000 pts",
+              "result": "5-0",
+              "subfaction": "Cauldron Guard",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 3,
+              "unitEntries": 6,
+              "models": 6,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 760,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Krethusa the Croneseer",
+                  "points": 180,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 330,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Zealous Orator",
+                    "Khainite Pendant"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter with Bladed Bucklers",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter with Bladed Bucklers",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Witch Aelves with Paired Sciansá",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "source": "Singles",
+              "weekLabel": "April 13 - 19",
+              "name": "List 2",
+              "result": "4-1",
+              "subfaction": "Coven Zealots",
+              "manifestationLore": "Unknown",
+              "regiments": 3,
+              "unitEntries": 10,
+              "models": 64,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "SoG Bloodwrack Shrine",
+                  "points": 250,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 5,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 5,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Hand of Khaine",
+                    "Witchbrew"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "High Gladiatrix",
+                  "points": 120,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Krethusa the Croneseer",
+                  "points": 220,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Witch Aelves",
+                  "points": 240,
+                  "models": 20,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "singles",
+          "label": "Singles",
+          "datasetKey": "current",
+          "listCount": 2,
+          "reportLinks": {
+            "stats": "reports/current/singles.md",
+            "lists": "reports/current/singles-lists.md"
+          },
+          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Blood Sisters in 2 lists (100.0%). Most common subfaction is Coven of Blood (1 lists). Highest model count unit is Blood Sisters (21 models).",
+          "filters": {
+            "results": [
+              "4-1"
+            ],
+            "subfactions": [
+              "Coven of Blood",
+              "Coven Zealots"
+            ]
+          },
+          "story": {
+            "coreSignals": [
+              {
+                "label": "Top subfaction",
+                "value": "Coven of Blood",
+                "detail": "1 of 2 lists"
+              },
+              {
+                "label": "Top manifestation lore",
+                "value": "Manifestations of Khaine",
+                "detail": "1 of 2 lists"
+              },
+              {
+                "label": "Most shared unit",
+                "value": "Blood Sisters",
+                "detail": "2 of 2 lists (100.0%)"
+              },
+              {
+                "label": "Most repeated package",
+                "value": "Blood Sisters + High Gladiatrix",
+                "detail": "2 of 2 lists (100.0%)"
+              }
+            ],
+            "sharedUnits": [
+              {
+                "name": "Blood Sisters",
+                "listCount": 2,
+                "share": "100.0%"
+              },
+              {
+                "name": "High Gladiatrix",
+                "listCount": 2,
+                "share": "100.0%"
+              },
+              {
+                "name": "Sisters of Slaughter",
+                "listCount": 2,
+                "share": "100.0%"
+              }
+            ],
+            "sharedUnitPairs": [
+              {
+                "units": [
+                  "Blood Sisters",
+                  "High Gladiatrix"
+                ],
+                "listCount": 2,
+                "share": "100.0%"
+              },
+              {
+                "units": [
+                  "Blood Sisters",
+                  "Sisters of Slaughter"
+                ],
+                "listCount": 2,
+                "share": "100.0%"
+              },
+              {
+                "units": [
+                  "High Gladiatrix",
+                  "Sisters of Slaughter"
+                ],
+                "listCount": 2,
+                "share": "100.0%"
+              }
+            ],
+            "weeklyTrends": [],
+            "snapshotTrends": []
+          },
+          "statsTables": [
+            {
+              "key": "resultBreakdown",
+              "title": "Result breakdown",
+              "headers": [
+                "Result",
+                "Lists"
+              ],
+              "rows": [
+                [
+                  "4-1",
+                  "2"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitPresence",
+              "title": "Top unit presence",
+              "headers": [
+                "Unit",
+                "Lists",
+                "% of lists"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Blood Hags",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Witch Aelves",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1",
+                  "50.0%"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitEntries",
+              "title": "Top unit entries",
+              "headers": [
+                "Unit",
+                "Entries"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "3"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "3"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "2"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "1"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1"
+                ],
+                [
+                  "Blood Hags",
+                  "1"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "1"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1"
+                ],
+                [
+                  "Witch Aelves",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topModelCounts",
+              "title": "Top model counts",
+              "headers": [
+                "Unit",
+                "Models"
+              ],
+              "rows": [
+                [
+                  "Blood Sisters",
+                  "21"
+                ],
+                [
+                  "Witch Aelves",
+                  "20"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "12"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "10"
+                ],
+                [
+                  "High Gladiatrix",
+                  "2"
+                ],
+                [
+                  "Morathi-Khaine",
+                  "1"
+                ],
+                [
+                  "Blood Stalkers",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen",
+                  "1"
+                ],
+                [
+                  "Blood Hags",
+                  "1"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "1"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topSubfactions",
+              "title": "Top subfactions",
+              "headers": [
+                "Subfaction",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Coven of Blood",
+                  "1"
+                ],
+                [
+                  "Coven Zealots",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "manifestationLores",
+              "title": "Manifestation lores",
+              "headers": [
+                "Manifestation lore",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Manifestations of Khaine",
+                  "1"
+                ],
+                [
+                  "Unknown",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "artifacts",
+              "title": "Artifacts",
+              "headers": [
+                "Artifact",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "commandTraits",
+              "title": "Command traits",
+              "headers": [
+                "Command trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "warmachineTraits",
+              "title": "Warmachine traits",
+              "headers": [
+                "Warmachine trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "unplayedKnownUnits",
+              "title": "Unplayed known units",
+              "headers": [
+                "Unit",
+                "Unit size"
+              ],
+              "rows": []
+            }
+          ],
+          "lists": [
+            {
+              "index": 0,
+              "source": "Singles",
+              "weekLabel": "April 13 - 19",
+              "name": "Daughters of Khorne with a buff like lumineth but with requirements... 1930/2000 pts",
+              "result": "4-1",
+              "subfaction": "Coven of Blood",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 2,
+              "unitEntries": 8,
+              "models": 8,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 730,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Stalkers",
+                  "points": 150,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen",
+                  "points": 130,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Witchbrew",
+                    "Shadow-Blooded"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Blood Hags",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "High Gladiatrix",
+                  "points": 120,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "*Nick Swope - Look if any of y'all know a giant spellcasting and 50ft tall murder goddess and havent introduced me or set up a date for me I will be extremely disappointed.**"
+                  ]
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "source": "Singles",
+              "weekLabel": "April 13 - 19",
+              "name": "List 2",
+              "result": "4-1",
+              "subfaction": "Coven Zealots",
+              "manifestationLore": "Unknown",
+              "regiments": 3,
+              "unitEntries": 10,
+              "models": 64,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "SoG Bloodwrack Shrine",
+                  "points": 250,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 5,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 5,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Hand of Khaine",
+                    "Witchbrew"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "High Gladiatrix",
+                  "points": 120,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Krethusa the Croneseer",
+                  "points": 220,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Witch Aelves",
+                  "points": 240,
+                  "models": 20,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 10,
+                  "reinforced": true,
+                  "notes": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "teams",
+          "label": "Teams",
+          "datasetKey": "current",
+          "listCount": 2,
+          "reportLinks": {
+            "stats": "reports/current/teams.md",
+            "lists": "reports/current/teams-lists.md"
+          },
+          "statsSummary": "Most common result is 5-0 (2 lists). Top unit presence is Morathi-Khaine in 2 lists (100.0%). Most common subfaction is Cauldron Guard (1 lists). Highest model count unit is Morathi-Khaine (2 models).",
+          "filters": {
+            "results": [
+              "5-0"
+            ],
+            "subfactions": [
+              "Cauldron Guard",
+              "Coven of Blood"
+            ]
+          },
+          "story": {
+            "coreSignals": [
+              {
+                "label": "Top subfaction",
+                "value": "Cauldron Guard",
+                "detail": "1 of 2 lists"
+              },
+              {
+                "label": "Top manifestation lore",
+                "value": "Manifestations of Khaine",
+                "detail": "2 of 2 lists"
+              },
+              {
+                "label": "Most shared unit",
+                "value": "Morathi-Khaine",
+                "detail": "2 of 2 lists (100.0%)"
+              },
+              {
+                "label": "Most repeated package",
+                "value": "Morathi-Khaine + Slaughter Queen on Cauldron of Blood",
+                "detail": "2 of 2 lists (100.0%)"
+              }
+            ],
+            "sharedUnits": [
+              {
+                "name": "Morathi-Khaine",
+                "listCount": 2,
+                "share": "100.0%"
+              },
+              {
+                "name": "Slaughter Queen on Cauldron of Blood",
+                "listCount": 2,
+                "share": "100.0%"
+              }
+            ],
+            "sharedUnitPairs": [
+              {
+                "units": [
+                  "Morathi-Khaine",
+                  "Slaughter Queen on Cauldron of Blood"
+                ],
+                "listCount": 2,
+                "share": "100.0%"
+              }
+            ],
+            "weeklyTrends": [],
+            "snapshotTrends": []
+          },
+          "statsTables": [
+            {
+              "key": "resultBreakdown",
+              "title": "Result breakdown",
+              "headers": [
+                "Result",
+                "Lists"
+              ],
+              "rows": [
+                [
+                  "5-0",
+                  "2"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitPresence",
+              "title": "Top unit presence",
+              "headers": [
+                "Unit",
+                "Lists",
+                "% of lists"
+              ],
+              "rows": [
+                [
+                  "Morathi-Khaine",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "Sisters of Slaughter with Bladed Bucklers",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Witch Aelves with Paired Sciansá",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Blood Sisters",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Khinerai Heartrenders",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Blood Hags",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "1",
+                  "50.0%"
+                ]
+              ]
+            },
+            {
+              "key": "topUnitEntries",
+              "title": "Top unit entries",
+              "headers": [
+                "Unit",
+                "Entries"
+              ],
+              "rows": [
+                [
+                  "Morathi-Khaine",
+                  "2"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "2"
+                ],
+                [
+                  "Sisters of Slaughter with Bladed Bucklers",
+                  "2"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "2"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1"
+                ],
+                [
+                  "Witch Aelves with Paired Sciansá",
+                  "1"
+                ],
+                [
+                  "Blood Sisters",
+                  "1"
+                ],
+                [
+                  "Khinerai Heartrenders",
+                  "1"
+                ],
+                [
+                  "Blood Hags",
+                  "1"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topModelCounts",
+              "title": "Top model counts",
+              "headers": [
+                "Unit",
+                "Models"
+              ],
+              "rows": [
+                [
+                  "Morathi-Khaine",
+                  "2"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "2"
+                ],
+                [
+                  "Sisters of Slaughter with Bladed Bucklers",
+                  "2"
+                ],
+                [
+                  "Khinerai Lifetakers",
+                  "2"
+                ],
+                [
+                  "Krethusa the Croneseer",
+                  "1"
+                ],
+                [
+                  "Witch Aelves with Paired Sciansá",
+                  "1"
+                ],
+                [
+                  "Blood Sisters",
+                  "1"
+                ],
+                [
+                  "Khinerai Heartrenders",
+                  "1"
+                ],
+                [
+                  "Blood Hags",
+                  "1"
+                ],
+                [
+                  "Sisters of Slaughter",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "topSubfactions",
+              "title": "Top subfactions",
+              "headers": [
+                "Subfaction",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Cauldron Guard",
+                  "1"
+                ],
+                [
+                  "Coven of Blood",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "key": "manifestationLores",
+              "title": "Manifestation lores",
+              "headers": [
+                "Manifestation lore",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Manifestations of Khaine",
+                  "2"
+                ]
+              ]
+            },
+            {
+              "key": "artifacts",
+              "title": "Artifacts",
+              "headers": [
+                "Artifact",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "commandTraits",
+              "title": "Command traits",
+              "headers": [
+                "Command trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "warmachineTraits",
+              "title": "Warmachine traits",
+              "headers": [
+                "Warmachine trait",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
+              "key": "unplayedKnownUnits",
+              "title": "Unplayed known units",
+              "headers": [
+                "Unit",
+                "Unit size"
+              ],
+              "rows": []
+            }
+          ],
+          "lists": [
+            {
+              "index": 0,
+              "source": "Teams",
+              "weekLabel": "April 13 - 19",
+              "name": "Coven of Blood 2000/2000 pts",
+              "result": "5-0",
+              "subfaction": "Coven of Blood",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 2,
+              "unitEntries": 8,
+              "models": 8,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 730,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Blood Sisters",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Heartrenders",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Hand of Khaine",
+                    "Witchbrew"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Blood Hags",
+                  "points": 280,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Sisters of Slaughter",
+                  "points": 110,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Khinerai Lifetakers",
+                  "points": 100,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                }
+              ]
+            },
+            {
+              "index": 1,
+              "source": "Teams",
+              "weekLabel": "April 13 - 19",
+              "name": "Last ride of the immortal Queen 1990/2000 pts",
+              "result": "5-0",
+              "subfaction": "Cauldron Guard",
+              "manifestationLore": "Manifestations of Khaine",
+              "regiments": 3,
+              "unitEntries": 6,
+              "models": 6,
+              "units": [
+                {
+                  "regiment": "General's Regiment",
+                  "name": "Morathi-Khaine",
+                  "points": 760,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "General"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 1",
+                  "name": "Krethusa the Croneseer",
+                  "points": 180,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Slaughter Queen on Cauldron of Blood",
+                  "points": 330,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": [
+                    "Zealous Orator",
+                    "Khainite Pendant"
+                  ]
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter with Bladed Bucklers",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Sisters of Slaughter with Bladed Bucklers",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                },
+                {
+                  "regiment": "Regiment 2",
+                  "name": "Witch Aelves with Paired Sciansá",
+                  "points": 240,
+                  "models": 1,
+                  "reinforced": true,
+                  "notes": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
