@@ -42,23 +42,69 @@ UNIT_PATTERN = re.compile(
 HEADING_RESULT_PATTERN = re.compile(r"#+\s*(5-0|4-1)")
 REPORT_SECTION_LIMIT = 10
 
-POINT_INFERENCES = {}
+POINT_INFERENCES = {
+    ("Morathi-Khaine", 730): 1,
+    ("Blood Sisters", 140): 5,
+    ("Blood Stalkers", 150): 5,
+    ("Sisters of Slaughter", 110): 10,
+    ("The Shadow Queen", 0): 1,
+    ("Slaughter Queen", 130): 1,
+    ("Blood Hags", 140): 10,
+    ("High Gladiatrix", 120): 1,
+    ("SoG Bloodwrack Shrine", 250): 1,
+    ("Slaughter Queen on Cauldron of Blood", 280): 1,
+    ("Krethusa the Croneseer", 180): 1,
+    ("Khinerai Heartrenders", 100): 5,
+    ("Khinerai Lifetakers", 100): 5,
+    # Add more as needed
+}
 
-UNIT_MODEL_BASE_SIZE = {}
+UNIT_MODEL_BASE_SIZE = {
+    "Morathi-Khaine": 1,
+    "Blood Sisters": 5,
+    "Blood Stalkers": 5,
+    "Sisters of Slaughter": 10,
+    "The Shadow Queen": 1,
+    "Slaughter Queen": 1,
+    "Blood Hags": 10,
+    "High Gladiatrix": 1,
+    "SoG Bloodwrack Shrine": 1,
+    "Slaughter Queen on Cauldron of Blood": 1,
+    "Krethusa the Croneseer": 1,
+    "Khinerai Heartrenders": 5,
+    "Khinerai Lifetakers": 5,
+    # Add more as needed
+}
 
 UNIT_NAME_ALIASES = {}
 
-TRAIT_NAMES = set()
+TRAIT_NAMES = {
+    "Reinforced",
+    "General",
+    "Shadow-Blooded",
+}
 
-ARTIFACTS = set()
+ARTIFACTS = {
+    "Witchbrew",
+    "Hand of Khaine",
+    "Khainite Pendant",
+}
 
-COMMAND_TRAITS = set()
+COMMAND_TRAITS = {
+    "Zealous Orator",
+}
 
 WARMACHINE_TRAITS = set()
 
 LIST_NAME_EXCLUSIONS = {
-    FACTION_NAME,
+    "Daughters of Khaine",
     "Grand Alliance: Order",
-    GRAND_ALLIANCE_NAME,
     "General's Handbook 2025-26",
+    # Add more as needed
+}
+
+# Known terrain names to skip as units
+TERRAIN_NAMES = {
+    "Shrine of Dark Tribute",
+    # Add more as needed
 }

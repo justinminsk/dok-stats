@@ -1,55 +1,54 @@
 # Daughters of Khaine stats - Combined
 
-- Lists parsed: 4
-- Total unit entries: 32
-- Total inferred models: 86
+- Lists parsed: 3
+- Total unit entries: 26
+- Total inferred models: 149
 
 ## Top units by entries
 - Blood Sisters: 4
-- Sisters of Slaughter: 4
 - Khinerai Lifetakers: 4
-- Morathi-Khaine: 3
-- Slaughter Queen on Cauldron of Blood: 3
-- Blood Hags: 2
+- Sisters of Slaughter: 4
+- Slaughter Queen on Cauldron of Blood: 2
 - High Gladiatrix: 2
-- Krethusa the Croneseer: 2
-- Sisters of Slaughter with Bladed Bucklers: 2
-- Blood Stalkers: 1
+- Morathi-Khaine: 2
+- Blood Hags: 2
+- SoG Bloodwrack Shrine: 1
+- Krethusa the Croneseer: 1
+- Witch Aelves: 1
 
 ## Top units by list presence
-- Blood Sisters: 3/4 lists (75.0%)
-- Morathi-Khaine: 3/4 lists (75.0%)
-- Sisters of Slaughter: 3/4 lists (75.0%)
-- Slaughter Queen on Cauldron of Blood: 3/4 lists (75.0%)
-- Blood Hags: 2/4 lists (50.0%)
-- High Gladiatrix: 2/4 lists (50.0%)
-- Khinerai Lifetakers: 2/4 lists (50.0%)
-- Krethusa the Croneseer: 2/4 lists (50.0%)
-- Blood Stalkers: 1/4 lists (25.0%)
-- Slaughter Queen: 1/4 lists (25.0%)
+- Sisters of Slaughter: 3/3 lists (100.0%)
+- Blood Sisters: 3/3 lists (100.0%)
+- High Gladiatrix: 2/3 lists (66.7%)
+- Khinerai Lifetakers: 2/3 lists (66.7%)
+- Slaughter Queen on Cauldron of Blood: 2/3 lists (66.7%)
+- Morathi-Khaine: 2/3 lists (66.7%)
+- Blood Hags: 2/3 lists (66.7%)
+- Witch Aelves: 1/3 lists (33.3%)
+- Krethusa the Croneseer: 1/3 lists (33.3%)
+- SoG Bloodwrack Shrine: 1/3 lists (33.3%)
 
 ## Top units by model count
-- Blood Sisters: 22
+- Sisters of Slaughter: 40
+- Blood Sisters: 30
+- Khinerai Lifetakers: 20
 - Witch Aelves: 20
-- Sisters of Slaughter: 13
-- Khinerai Lifetakers: 12
-- Morathi-Khaine: 3
-- Slaughter Queen on Cauldron of Blood: 3
-- Blood Hags: 2
+- Blood Hags: 20
+- Blood Stalkers: 5
+- Khinerai Heartrenders: 5
+- Slaughter Queen on Cauldron of Blood: 2
 - High Gladiatrix: 2
-- Krethusa the Croneseer: 2
-- Sisters of Slaughter with Bladed Bucklers: 2
+- Morathi-Khaine: 2
 
 ## Unplayed units
-- None
+- The Shadow Queen (unit size 1)
 
 ## Subfaction counts
 - Coven of Blood: 2
 - Coven Zealots: 1
-- Cauldron Guard: 1
 
 ## Manifestation lore counts
-- Manifestations of Khaine: 3
+- Manifestations of Khaine: 2
 - Unknown: 1
 
 ## Artifact counts

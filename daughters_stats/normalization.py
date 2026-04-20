@@ -58,4 +58,11 @@ def is_potential_list_name(text: str) -> bool:
     candidate = clean_line(text)
     if not candidate or candidate in LIST_NAME_EXCLUSIONS:
         return False
-    return not candidate.lower().startswith(LIST_NAME_EXCLUDED_PREFIXES)
+    # Allow lines with dashes and names (e.g., Nick Swope - ...), as long as not excluded
+    if candidate.lower().startswith(LIST_NAME_EXCLUDED_PREFIXES):
+        return False
+    # Heuristic: allow if contains a dash and at least one alphabetic character
+    if "-" in candidate and any(c.isalpha() for c in candidate):
+        return True
+    # Otherwise, fallback to original logic
+    return True

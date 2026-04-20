@@ -4,7 +4,7 @@
 
 Small repo for parsing Daughters of Khaine event lists and generating readable summaries.
 
-- Last run date: 2026-04-20 15:51:22 Mountain Daylight Time
+- Last run date: 2026-04-20 16:50:52 Mountain Daylight Time
 - Python version: 3.11
 
 ## What lives where

@@ -5,7 +5,6 @@ import re
 from .constants import (
     FACTION_NAME,
     GRAND_ALLIANCE_NAME,
-    HEADING_RESULT_PATTERN,
     POINTS_TRIGGER,
     SCOPE_NAMES,
     STARTER_PREFIXES,
@@ -13,6 +12,7 @@ from .constants import (
     UNIT_PATTERN,
     UNIT_MODEL_BASE_SIZE,
     UNKNOWN,
+    TERRAIN_NAMES,
 )
 from .metrics import infer_models
 from .models import ListData, UnitData
@@ -86,11 +86,8 @@ def parse_lists(text: str) -> list[ListData]:
 
     for raw in lines:
         line = clean_line(raw)
-        if not line:
-            continue
-        if re.fullmatch(r"[-~*]{3,}", line):
-            continue
-
+        stripped_raw = raw.strip()
+        # Detect section headings and set current_source
         if raw.lstrip().startswith("#"):
             title = heading_text(raw)
             if title in SCOPE_NAMES:
@@ -105,12 +102,32 @@ def parse_lists(text: str) -> list[ListData]:
                 current_result = title
                 continue
 
-        heading_result_match = HEADING_RESULT_PATTERN.fullmatch(line)
-        if heading_result_match:
-            current_result = heading_result_match.group(1)
+        unit_match = UNIT_PATTERN.match(line)
+        if unit_match:
+            unit_name = normalize_unit_name(unit_match.group(2))
+            points = int(unit_match.group(3).replace(",", ""))
+            # If terrain, record in terrain fields and skip as unit
+            if unit_name in TERRAIN_NAMES:
+                if current_list is not None:
+                    current_list.terrain_name = unit_name
+                    current_list.terrain_points = points
+                continue
+            if current_list is not None and not current_list.name and pending_name:
+                current_list.name = pending_name
+            explicit_models = int(unit_match.group(1)) if unit_match.group(1) else None
+            if points < 50:
+                continue
+            inferred_models = explicit_models or infer_models(unit_name, points)
+            base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
+            current_unit = UnitData(
+                name=unit_name,
+                points=points,
+                models=inferred_models,
+                regiment=current_regiment,
+                reinforced=inferred_models > base_size,
+            )
+            current_list.units.append(current_unit)
             continue
-
-        stripped_raw = raw.strip()
         if stripped_raw.startswith("**") and stripped_raw.endswith("**"):
             candidate = clean_line(stripped_raw.replace("**", ""))
             if is_potential_list_name(candidate):
@@ -226,7 +243,12 @@ def parse_lists(text: str) -> list[ListData]:
         unit_match = UNIT_PATTERN.match(line)
         if unit_match:
             unit_name = normalize_unit_name(unit_match.group(2))
-            points = int(unit_match.group(3).replace(",", ""))
+            unit_match = UNIT_PATTERN.match(line)
+            if unit_match:
+                unit_name = normalize_unit_name(unit_match.group(2))
+                # Skip terrain lines
+                if unit_name in TERRAIN_NAMES:
+                    continue
             explicit_models = int(unit_match.group(1)) if unit_match.group(1) else None
             if points < 50:
                 continue

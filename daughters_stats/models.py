@@ -41,3 +41,5 @@ class ListData:
     manifestation_lore: str = UNKNOWN
     units: list[UnitData] = field(default_factory=list)
     traits: list[str] = field(default_factory=list)
+    terrain_name: str = ""
+    terrain_points: int = 0

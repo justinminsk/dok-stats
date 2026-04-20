@@ -10,44 +10,6 @@ Add new 5-0 / 4-1 lists below using the same export formats as before.
 
 ##### 4-1
 
-**Daughters of Khorne with a buff like lumineth but with requirements... 1930/2000 pts**
-
-
-Daughters of Khaine
-Coven of Blood
-General's Handbook 2025-26
-Drops: 2
-Spell Lore - Lore of Shadows
-Prayer Lore - Prayers of the Khainite Cult
-Manifestation Lore - Manifestations of Khaine
-
-
-Battle Tactic Cards: Intercept and Recover, Attuned to Ghyran
-
-
-General's Regiment
-Morathi-Khaine (730)
-• General
-Blood Sisters (280)
-• Reinforced
-Blood Stalkers (150)
-Sisters of Slaughter (110)
-The Shadow Queen (0)
-
-
-Regiment 1
-Slaughter Queen (130)
-• Witchbrew
-• Shadow-Blooded
-Blood Hags (280)
-• Reinforced
-High Gladiatrix (120)
-Sisters of Slaughter (110)
-
-
-Faction Terrain
-Shrine of Dark Tribute (20 Points)
-
 **Nick Swope - Look if any of y'all know a giant spellcasting and 50ft tall murder goddess and havent introduced me or set up a date for me I will be extremely disappointed.**
 -----
 Daughters of Khaine | Coven Zealots
@@ -83,46 +45,45 @@ Krethusa the Croneseer (220)
 
 Created with War Nexus 1.1.4 on ageofspoon.com/warnexus | Game Version: 4.1.9
 
+**Daughters of Khorne with a buff like lumineth but with requirements... 1930/2000 pts**
+
+Daughters of Khaine
+Coven of Blood
+General's Handbook 2025-26
+Drops: 2
+Spell Lore - Lore of Shadows
+Prayer Lore - Prayers of the Khainite Cult
+Manifestation Lore - Manifestations of Khaine
+
+Battle Tactic Cards: Intercept and Recover, Attuned to Ghyran
+
+General's Regiment
+Morathi-Khaine (730)
+• General
+Blood Sisters (280)
+• Reinforced
+Blood Stalkers (150)
+Sisters of Slaughter (110)
+The Shadow Queen (0)
+
+Regiment 1
+Slaughter Queen (130)
+• Witchbrew
+• Shadow-Blooded
+Blood Hags (280)
+• Reinforced
+High Gladiatrix (120)
+Sisters of Slaughter (110)
+
+Faction Terrain
+Shrine of Dark Tribute (20 Points)
+
+
 # **Teams**
 
 ### April 13 - 19
 
 ##### 5-0
-
-**Last ride of the immortal Queen 1990/2000 pts**
-
-Daughters of Khaine
-Cauldron Guard
-General's Handbook 2025-26
-Drops: 3
-Spell Lore - Lore of Shadows
-Prayer Lore - Prayers of the Khainite Cult
-Manifestation Lore - Manifestations of Khaine
-
-Battle Tactic Cards: Wrathful Cycles, Master The Paths
-
-General's Regiment
-Morathi-Khaine (760)
-• General
-The Shadow Queen (0)
-
-Regiment 1
-Krethusa the Croneseer (180)
-
-Regiment 2
-Slaughter Queen on Cauldron of Blood (330)
-• Zealous Orator
-• Khainite Pendant
-Sisters of Slaughter with Bladed Bucklers (240)
-• Reinforced
-Sisters of Slaughter with Bladed Bucklers (240)
-• Reinforced
-Witch Aelves with Paired Sciansá (240)
-• Reinforced
-
-
-Created with Warhammer Age of Sigmar: The App
-App: 1.29.0 | Data: 412
 
 **Coven of Blood 2000/2000 pts**
 
