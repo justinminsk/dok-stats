@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from 'react';
+import { KhaineIcon } from '../icons/Icons';
 
 type AppShellProps = PropsWithChildren<{
   title: string;
@@ -17,7 +18,8 @@ export function AppShell({ title, subtitle, banner, bannerTone = 'neutral', chil
               <p className="eyebrow">Daughters of Khaine</p>
               <p className="hero-kicker">Winning list trends and breakdowns</p>
             </div>
-            <div className="app-shell__title-block">
+            <div className="app-shell__title-block" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <KhaineIcon width="32" height="32" className="text-accent" />
               <h1 className="app-title">{title}</h1>
               <p className="app-subtitle">{subtitle}</p>
             </div>

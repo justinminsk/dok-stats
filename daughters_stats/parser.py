@@ -240,29 +240,7 @@ def parse_lists(text: str) -> list[ListData]:
             current_list.manifestation_lore = value
             continue
 
-        unit_match = UNIT_PATTERN.match(line)
-        if unit_match:
-            unit_name = normalize_unit_name(unit_match.group(2))
-            unit_match = UNIT_PATTERN.match(line)
-            if unit_match:
-                unit_name = normalize_unit_name(unit_match.group(2))
-                # Skip terrain lines
-                if unit_name in TERRAIN_NAMES:
-                    continue
-            explicit_models = int(unit_match.group(1)) if unit_match.group(1) else None
-            if points < 50:
-                continue
-            inferred_models = explicit_models or infer_models(unit_name, points)
-            base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
-            current_unit = UnitData(
-                name=unit_name,
-                points=points,
-                models=inferred_models,
-                regiment=current_regiment,
-                reinforced=inferred_models > base_size,
-            )
-            current_list.units.append(current_unit)
-            continue
+
 
         if line.startswith(("•", "~", "*", "-", "[")):
             trait = normalize_trait_name(re.sub(r"^[•~*\-]\s*", "", line))
@@ -271,6 +249,9 @@ def parse_lists(text: str) -> list[ListData]:
             if current_unit is not None:
                 if trait.lower() == "reinforced":
                     current_unit.reinforced = True
+                    base_size = UNIT_MODEL_BASE_SIZE.get(current_unit.name, 1)
+                    if current_unit.models <= base_size and base_size > 1:
+                        current_unit.models = base_size * 2
                 else:
                     current_unit.notes.append(trait)
             if trait in TRAIT_NAMES:

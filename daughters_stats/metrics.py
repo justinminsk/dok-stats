@@ -14,7 +14,17 @@ def infer_models(unit_name: str, points: int) -> int:
     base_size = UNIT_MODEL_BASE_SIZE.get(unit_name)
     if base_size is None or base_size == 1:
         return 1
-    return POINT_INFERENCES.get((unit_name, points), base_size)
+        
+    if (unit_name, points) in POINT_INFERENCES:
+        return POINT_INFERENCES[(unit_name, points)]
+        
+    base_points = next((p for (n, p) in POINT_INFERENCES.keys() if n == unit_name), None)
+    if base_points and base_points > 0:
+        multiplier = round(points / base_points)
+        if multiplier > 1:
+            return base_size * multiplier
+            
+    return base_size
 
 
 def total_models(units: list[UnitData]) -> int:
@@ -41,7 +51,8 @@ def collect_scope_metrics(lists_for_scope: list[ListData]) -> ScopeMetrics:
 
         units_in_this_list = set()
         for unit in army_list.units:
-            metrics.unit_entries[unit.name] += 1
+            entries_to_add = 2 if unit.reinforced else 1
+            metrics.unit_entries[unit.name] += entries_to_add
             units_in_this_list.add(unit.name)
             metrics.model_counts[unit.name] += unit.models
 

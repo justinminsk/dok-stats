@@ -13,12 +13,12 @@
 
 ### General's Regiment
 - Morathi-Khaine - 730 pts - 1 models - notes: General
-- Blood Sisters - 280 pts - 5 models - reinforced
+- Blood Sisters - 280 pts - 10 models - reinforced
 - Khinerai Heartrenders - 100 pts - 5 models
 - Khinerai Lifetakers - 100 pts - 5 models
 ### Regiment 1
 - Slaughter Queen on Cauldron of Blood - 280 pts - 1 models - notes: Hand of Khaine, Witchbrew
-- Blood Hags - 280 pts - 10 models - reinforced
+- Blood Hags - 280 pts - 20 models - reinforced
 - Sisters of Slaughter - 110 pts - 10 models
 - Khinerai Lifetakers - 100 pts - 5 models
 
@@ -33,12 +33,12 @@
 
 ### General's Regiment
 - Morathi-Khaine - 730 pts - 1 models - notes: General
-- Blood Sisters - 280 pts - 5 models - reinforced
+- Blood Sisters - 280 pts - 10 models - reinforced
 - Blood Stalkers - 150 pts - 5 models
 - Sisters of Slaughter - 110 pts - 10 models
 ### Regiment 1
 - Slaughter Queen - 130 pts - 1 models - notes: Witchbrew, Shadow-Blooded
-- Blood Hags - 280 pts - 10 models - reinforced
+- Blood Hags - 280 pts - 20 models - reinforced
 - High Gladiatrix - 120 pts - 1 models
 - Sisters of Slaughter - 110 pts - 10 models
 

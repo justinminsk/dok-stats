@@ -19,15 +19,16 @@ import { applyThemeTokens, getInitialTheme, storeTheme, type ThemeMode } from '.
 import { ScopeStatsView } from './ScopeStatsView';
 import { ScopeListsView } from './ScopeListsView';
 import { ScopeTrendsView } from './ScopeTrendsView';
+import { SkullIcon, KhaineIcon, DaggerIcon } from '../icons/Icons';
 
 type DashboardProps = {
   payload: SiteDataPayload;
 };
 
-const dashboardViews: Array<{ key: DashboardRoute['viewKey']; label: string }> = [
-  { key: 'stats', label: 'Stats' },
-  { key: 'trends', label: 'Trends' },
-  { key: 'lists', label: 'Lists' },
+const dashboardViews: Array<{ key: DashboardRoute['viewKey']; label: string; icon: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> }> = [
+  { key: 'stats', label: 'Stats', icon: SkullIcon },
+  { key: 'trends', label: 'Trends', icon: KhaineIcon },
+  { key: 'lists', label: 'Lists', icon: DaggerIcon },
 ];
 
 export function Dashboard({ payload }: DashboardProps) {
@@ -374,7 +375,7 @@ export function Dashboard({ payload }: DashboardProps) {
           <section className="panel-control-group panel-control-group--view">
             <p className="panel-control-group__label">View</p>
             <nav aria-label={`${scope.label} view tabs`} className="tab-row tab-row--tertiary" role="tablist" id={viewNavId}>
-              {dashboardViews.map(({ key: viewKey, label }) => {
+              {dashboardViews.map(({ key: viewKey, label, icon: Icon }) => {
                 const isActive = route.viewKey === viewKey;
                 const tabId = `${viewNavId}-tab-${viewKey}`;
                 return (
@@ -397,7 +398,9 @@ export function Dashboard({ payload }: DashboardProps) {
                     role="tab"
                     tabIndex={isActive ? 0 : -1}
                     type="button"
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}
                   >
+                    <Icon width="16" height="16" />
                     {label}
                   </button>
                 );

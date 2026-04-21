@@ -1,39 +1,39 @@
 # Daughters of Khaine stats - Combined
 
 - Lists parsed: 3
-- Total unit entries: 26
-- Total inferred models: 149
+- Total unit entries: 33
+- Total inferred models: 179
 
 ## Top units by entries
-- Blood Sisters: 4
+- Blood Sisters: 8
 - Khinerai Lifetakers: 4
 - Sisters of Slaughter: 4
+- Blood Hags: 4
 - Slaughter Queen on Cauldron of Blood: 2
 - High Gladiatrix: 2
+- Witch Aelves: 2
 - Morathi-Khaine: 2
-- Blood Hags: 2
 - SoG Bloodwrack Shrine: 1
 - Krethusa the Croneseer: 1
-- Witch Aelves: 1
 
 ## Top units by list presence
 - Sisters of Slaughter: 3/3 lists (100.0%)
 - Blood Sisters: 3/3 lists (100.0%)
-- High Gladiatrix: 2/3 lists (66.7%)
-- Khinerai Lifetakers: 2/3 lists (66.7%)
 - Slaughter Queen on Cauldron of Blood: 2/3 lists (66.7%)
+- Khinerai Lifetakers: 2/3 lists (66.7%)
+- High Gladiatrix: 2/3 lists (66.7%)
 - Morathi-Khaine: 2/3 lists (66.7%)
 - Blood Hags: 2/3 lists (66.7%)
-- Witch Aelves: 1/3 lists (33.3%)
 - Krethusa the Croneseer: 1/3 lists (33.3%)
 - SoG Bloodwrack Shrine: 1/3 lists (33.3%)
+- Witch Aelves: 1/3 lists (33.3%)
 
 ## Top units by model count
+- Blood Sisters: 40
 - Sisters of Slaughter: 40
-- Blood Sisters: 30
+- Blood Hags: 40
 - Khinerai Lifetakers: 20
 - Witch Aelves: 20
-- Blood Hags: 20
 - Blood Stalkers: 5
 - Khinerai Heartrenders: 5
 - Slaughter Queen on Cauldron of Blood: 2
