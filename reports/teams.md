@@ -14,13 +14,13 @@
 - Sisters of Slaughter: 1
 
 ## Top units by list presence
+- Morathi-Khaine: 1/1 lists (100.0%)
+- Blood Sisters: 1/1 lists (100.0%)
+- Slaughter Queen on Cauldron of Blood: 1/1 lists (100.0%)
+- Blood Hags: 1/1 lists (100.0%)
 - Khinerai Heartrenders: 1/1 lists (100.0%)
 - Sisters of Slaughter: 1/1 lists (100.0%)
-- Slaughter Queen on Cauldron of Blood: 1/1 lists (100.0%)
-- Morathi-Khaine: 1/1 lists (100.0%)
 - Khinerai Lifetakers: 1/1 lists (100.0%)
-- Blood Sisters: 1/1 lists (100.0%)
-- Blood Hags: 1/1 lists (100.0%)
 
 ## Top units by model count
 - Blood Hags: 20

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20 19:58:11 MDT",
+  "generatedAt": "2026-04-20 20:32:55 MDT",
   "defaultDatasetKey": "current",
   "scopeOrder": [
     "combined",
@@ -73,7 +73,7 @@
             "stats": "reports/current/combined.md",
             "lists": "reports/current/combined-lists.md"
           },
-          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Sisters of Slaughter in 3 lists (100.0%). Most common subfaction is Coven of Blood (2 lists). Highest model count unit is Blood Sisters (40 models).",
+          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Blood Sisters in 3 lists (100.0%). Most common subfaction is Coven of Blood (2 lists). Highest model count unit is Blood Sisters (40 models).",
           "filters": {
             "results": [
               "4-1",
@@ -200,12 +200,12 @@
               ],
               "rows": [
                 [
-                  "Sisters of Slaughter",
+                  "Blood Sisters",
                   "3",
                   "100.0%"
                 ],
                 [
-                  "Blood Sisters",
+                  "Sisters of Slaughter",
                   "3",
                   "100.0%"
                 ],
@@ -215,12 +215,12 @@
                   "66.7%"
                 ],
                 [
-                  "Khinerai Lifetakers",
+                  "High Gladiatrix",
                   "2",
                   "66.7%"
                 ],
                 [
-                  "High Gladiatrix",
+                  "Khinerai Lifetakers",
                   "2",
                   "66.7%"
                 ],
@@ -240,12 +240,12 @@
                   "33.3%"
                 ],
                 [
-                  "SoG Bloodwrack Shrine",
+                  "Witch Aelves",
                   "1",
                   "33.3%"
                 ],
                 [
-                  "Witch Aelves",
+                  "SoG Bloodwrack Shrine",
                   "1",
                   "33.3%"
                 ],
@@ -736,7 +736,7 @@
             "stats": "reports/current/singles.md",
             "lists": "reports/current/singles-lists.md"
           },
-          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Sisters of Slaughter in 2 lists (100.0%). Most common subfaction is Coven Zealots (1 lists). Highest model count unit is Blood Sisters (30 models).",
+          "statsSummary": "Most common result is 4-1 (2 lists). Top unit presence is Blood Sisters in 2 lists (100.0%). Most common subfaction is Coven Zealots (1 lists). Highest model count unit is Blood Sisters (30 models).",
           "filters": {
             "results": [
               "4-1"
@@ -840,6 +840,11 @@
               ],
               "rows": [
                 [
+                  "Blood Sisters",
+                  "2",
+                  "100.0%"
+                ],
+                [
                   "Sisters of Slaughter",
                   "2",
                   "100.0%"
@@ -850,27 +855,12 @@
                   "100.0%"
                 ],
                 [
-                  "Blood Sisters",
-                  "2",
-                  "100.0%"
-                ],
-                [
-                  "Krethusa the Croneseer",
-                  "1",
-                  "50.0%"
-                ],
-                [
-                  "SoG Bloodwrack Shrine",
-                  "1",
-                  "50.0%"
-                ],
-                [
                   "Slaughter Queen on Cauldron of Blood",
                   "1",
                   "50.0%"
                 ],
                 [
-                  "Khinerai Lifetakers",
+                  "Krethusa the Croneseer",
                   "1",
                   "50.0%"
                 ],
@@ -880,17 +870,27 @@
                   "50.0%"
                 ],
                 [
+                  "Khinerai Lifetakers",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "SoG Bloodwrack Shrine",
+                  "1",
+                  "50.0%"
+                ],
+                [
                   "Morathi-Khaine",
                   "1",
                   "50.0%"
                 ],
                 [
-                  "Slaughter Queen",
+                  "Blood Hags",
                   "1",
                   "50.0%"
                 ],
                 [
-                  "Blood Hags",
+                  "Slaughter Queen",
                   "1",
                   "50.0%"
                 ],
@@ -1297,7 +1297,7 @@
             "stats": "reports/current/teams.md",
             "lists": "reports/current/teams-lists.md"
           },
-          "statsSummary": "Most common result is 5-0 (1 lists). Top unit presence is Khinerai Heartrenders in 1 lists (100.0%). Most common subfaction is Coven of Blood (1 lists). Highest model count unit is Blood Hags (20 models).",
+          "statsSummary": "Most common result is 5-0 (1 lists). Top unit presence is Morathi-Khaine in 1 lists (100.0%). Most common subfaction is Coven of Blood (1 lists). Highest model count unit is Blood Hags (20 models).",
           "filters": {
             "results": [
               "5-0"
@@ -1380,6 +1380,26 @@
               ],
               "rows": [
                 [
+                  "Morathi-Khaine",
+                  "1",
+                  "100.0%"
+                ],
+                [
+                  "Blood Sisters",
+                  "1",
+                  "100.0%"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "1",
+                  "100.0%"
+                ],
+                [
+                  "Blood Hags",
+                  "1",
+                  "100.0%"
+                ],
+                [
                   "Khinerai Heartrenders",
                   "1",
                   "100.0%"
@@ -1390,27 +1410,7 @@
                   "100.0%"
                 ],
                 [
-                  "Slaughter Queen on Cauldron of Blood",
-                  "1",
-                  "100.0%"
-                ],
-                [
-                  "Morathi-Khaine",
-                  "1",
-                  "100.0%"
-                ],
-                [
                   "Khinerai Lifetakers",
-                  "1",
-                  "100.0%"
-                ],
-                [
-                  "Blood Sisters",
-                  "1",
-                  "100.0%"
-                ],
-                [
-                  "Blood Hags",
                   "1",
                   "100.0%"
                 ]

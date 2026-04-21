@@ -19,16 +19,18 @@ import { applyThemeTokens, getInitialTheme, storeTheme, type ThemeMode } from '.
 import { ScopeStatsView } from './ScopeStatsView';
 import { ScopeListsView } from './ScopeListsView';
 import { ScopeTrendsView } from './ScopeTrendsView';
-import { SkullIcon, KhaineIcon, DaggerIcon } from '../icons/Icons';
+import { ScopeSubmitView } from './ScopeSubmitView';
+import { SkullIcon, KhaineIcon, DaggerIcon, SubmitIcon } from '../icons/Icons';
 
 type DashboardProps = {
   payload: SiteDataPayload;
 };
 
-const dashboardViews: Array<{ key: DashboardRoute['viewKey']; label: string; icon: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> }> = [
+const dashboardViews: Array<{ key: DashboardRoute['viewKey']; label: string; icon: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> | React.FC<React.SVGProps<SVGSVGElement>> }> = [
   { key: 'stats', label: 'Stats', icon: SkullIcon },
   { key: 'trends', label: 'Trends', icon: KhaineIcon },
   { key: 'lists', label: 'Lists', icon: DaggerIcon },
+  { key: 'submit', label: 'Submit List', icon: SubmitIcon },
 ];
 
 export function Dashboard({ payload }: DashboardProps) {
@@ -130,6 +132,7 @@ export function Dashboard({ payload }: DashboardProps) {
   const statsViewTabId = `${viewNavId}-tab-stats`;
   const trendsViewTabId = `${viewNavId}-tab-trends`;
   const listsViewTabId = `${viewNavId}-tab-lists`;
+  const submitViewTabId = `${viewNavId}-tab-submit`;
 
   function updateRoute(nextRoute: DashboardRoute) {
     setRoute(nextRoute);
@@ -412,6 +415,8 @@ export function Dashboard({ payload }: DashboardProps) {
             <ScopeStatsView datasetKey={dataset.key} scope={scope} tabId={statsViewTabId} />
           ) : route.viewKey === 'trends' ? (
             <ScopeTrendsView datasetKey={dataset.key} datasets={payload.datasets} scope={scope} tabId={trendsViewTabId} />
+          ) : route.viewKey === 'submit' ? (
+            <ScopeSubmitView scope={scope} tabId={submitViewTabId} />
           ) : (
             <ScopeListsView
               datasetKey={dataset.key}

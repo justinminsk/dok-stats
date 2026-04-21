@@ -17,16 +17,16 @@
 - Morathi-Khaine: 1
 
 ## Top units by list presence
+- Blood Sisters: 2/2 lists (100.0%)
 - Sisters of Slaughter: 2/2 lists (100.0%)
 - High Gladiatrix: 2/2 lists (100.0%)
-- Blood Sisters: 2/2 lists (100.0%)
-- Krethusa the Croneseer: 1/2 lists (50.0%)
-- SoG Bloodwrack Shrine: 1/2 lists (50.0%)
 - Slaughter Queen on Cauldron of Blood: 1/2 lists (50.0%)
-- Khinerai Lifetakers: 1/2 lists (50.0%)
+- Krethusa the Croneseer: 1/2 lists (50.0%)
 - Witch Aelves: 1/2 lists (50.0%)
+- Khinerai Lifetakers: 1/2 lists (50.0%)
+- SoG Bloodwrack Shrine: 1/2 lists (50.0%)
 - Morathi-Khaine: 1/2 lists (50.0%)
-- Slaughter Queen: 1/2 lists (50.0%)
+- Blood Hags: 1/2 lists (50.0%)
 
 ## Top units by model count
 - Blood Sisters: 30
