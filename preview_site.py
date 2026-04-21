@@ -6,7 +6,7 @@ from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-BASE_PATH = "/daughters-of-khaine-stats/"
+BASE_PATH = "/dok-stats/"
 DOCS_DIR = Path(__file__).resolve().parent / "docs"
 
 

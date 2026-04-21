@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
-const pagesBasePath = process.env.VITE_BASE_PATH ?? '/daughters-of-khaine-stats/';
+const pagesBasePath = process.env.VITE_BASE_PATH ?? '/dok-stats/';
 
 export default defineConfig({
   base: pagesBasePath,

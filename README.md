@@ -1,6 +1,6 @@
 # Daughters of Khaine stats
 
-[![CI](https://github.com/justinminsk/daughters-of-khaine-stats/actions/workflows/tests.yml/badge.svg)](https://github.com/justinminsk/daughters-of-khaine-stats/actions/workflows/tests.yml)
+[![CI](https://github.com/justinminsk/dok-stats/actions/workflows/tests.yml/badge.svg)](https://github.com/justinminsk/dok-stats/actions/workflows/tests.yml)
 
 Small repo for parsing Daughters of Khaine event lists and generating readable summaries.
 
@@ -44,14 +44,14 @@ Small repo for parsing Daughters of Khaine event lists and generating readable s
 - Local built-site preview:
    - `python analyze_daughters_lists.py`
    - `python preview_site.py`
-   - open `http://127.0.0.1:8000/daughters-of-khaine-stats/`
+   - open `http://127.0.0.1:8000/dok-stats/`
 - Frontend-only development server:
    - `npm --prefix frontend run dev`
    - when the generated contract is unavailable, the app falls back to bundled sample data for UI work
 - GitHub Pages deploy is handled by [.github/workflows/pages.yml](.github/workflows/pages.yml).
 - In GitHub repo settings, set **Pages** source to **GitHub Actions**.
 - After push to `main`, your site will be available at:
-   - `https://<your-github-username>.github.io/daughters-of-khaine-stats/`
+   - `https://<your-github-username>.github.io/dok-stats/`
 
 ## Local CI checks
 
