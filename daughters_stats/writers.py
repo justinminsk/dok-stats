@@ -68,7 +68,9 @@ def write_list_summary(path: Path, lists_for_scope: list[ListData]) -> None:
                     "result": army_list.result_bucket,
                     "subfaction": army_list.subfaction,
                     "manifestation_lore": army_list.manifestation_lore,
-                    "unit_entries": sum(2 if unit.reinforced else 1 for unit in army_list.units),
+                    "unit_entries": sum(
+                        2 if unit.reinforced else 1 for unit in army_list.units
+                    ),
                     "models": total_models(army_list.units),
                     "units": json.dumps(
                         [asdict(unit) for unit in army_list.units],

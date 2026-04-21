@@ -240,8 +240,6 @@ def parse_lists(text: str) -> list[ListData]:
             current_list.manifestation_lore = value
             continue
 
-
-
         if line.startswith(("•", "~", "*", "-", "[")):
             trait = normalize_trait_name(re.sub(r"^[•~*\-]\s*", "", line))
             if not trait:

@@ -14,16 +14,18 @@ def infer_models(unit_name: str, points: int) -> int:
     base_size = UNIT_MODEL_BASE_SIZE.get(unit_name)
     if base_size is None or base_size == 1:
         return 1
-        
+
     if (unit_name, points) in POINT_INFERENCES:
         return POINT_INFERENCES[(unit_name, points)]
-        
-    base_points = next((p for (n, p) in POINT_INFERENCES.keys() if n == unit_name), None)
+
+    base_points = next(
+        (p for (n, p) in POINT_INFERENCES.keys() if n == unit_name), None
+    )
     if base_points and base_points > 0:
         multiplier = round(points / base_points)
         if multiplier > 1:
             return base_size * multiplier
-            
+
     return base_size
 
 
