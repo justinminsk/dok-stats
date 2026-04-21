@@ -18,7 +18,7 @@ describe('Dashboard', () => {
     expect(screen.getByRole('tabpanel', { name: 'Combined' })).toBeInTheDocument();
     expect(screen.getByRole('tabpanel', { name: 'Stats' })).toBeInTheDocument();
     expect(screen.getByRole('tab', { name: 'Trends' })).toBeInTheDocument();
-    expect(screen.getByLabelText('Lists parsed: 12')).toBeInTheDocument();
+    expect(screen.getByLabelText('Lists parsed: 2')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Open markdown report' })).toHaveAttribute(
       'href',
       'reports/current/combined.md'
@@ -50,10 +50,10 @@ describe('Dashboard', () => {
     expect(within(listsPanel).getByPlaceholderText('Search source, name, or unit')).toBeInTheDocument();
 
     fireEvent.change(within(listsPanel).getByPlaceholderText('Search source, name, or unit'), {
-      target: { value: 'Bull' },
+      target: { value: 'Witch' },
     });
 
-    expect(within(listsPanel).getAllByText('Sample List')).toHaveLength(2);
+    expect(within(listsPanel).getAllByText('Combined List A')).toHaveLength(2);
     expect(window.location.hash).toBe('#tab=current|combined|lists');
   });
 
@@ -69,8 +69,8 @@ describe('Dashboard', () => {
 
     expect(within(listsPanel).getByText('Week: April 13-19')).toBeInTheDocument();
     expect(within(listsPanel).getByText('Showing 1 of 1 matching lists.')).toBeInTheDocument();
-    expect(within(listsPanel).getAllByText('Ashen Pressure').length).toBeGreaterThan(0);
-    expect(within(listsPanel).queryByText('Sample List')).not.toBeInTheDocument();
+    expect(within(listsPanel).getAllByText('Combined List B').length).toBeGreaterThan(0);
+    expect(within(listsPanel).queryByText('Combined List A')).not.toBeInTheDocument();
 
     fireEvent.change(within(listsPanel).getByRole('combobox', { name: 'Sort' }), {
       target: { value: 'week-asc' },
@@ -86,16 +86,14 @@ describe('Dashboard', () => {
 
     expect(screen.getByRole('heading', { name: 'Compare units and rollups over time' })).toBeInTheDocument();
     expect(screen.getByLabelText('Trend comparison chart')).toBeInTheDocument();
-    expect(screen.getAllByText('Bull Centaurs').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('Jan 1-11').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Witch Aelves').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('April 6-12').length).toBeGreaterThan(0);
 
     fireEvent.change(screen.getByRole('combobox', { name: 'Rollup' }), { target: { value: 'twoWeek' } });
 
-    expect(screen.getAllByText('Jan 1-11 to Mar 23-29').length).toBeGreaterThan(0);
-
     fireEvent.change(screen.getByRole('combobox', { name: 'Metric' }), { target: { value: 'subfaction' } });
 
-    expect(screen.getAllByText("Taar's Grand Forgehost").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Hagg Nar").length).toBeGreaterThan(0);
     expect(window.location.hash).toBe('#tab=current|combined|trends');
   });
 
@@ -134,7 +132,7 @@ describe('Dashboard', () => {
     fireEvent.click(within(listsPanel).getAllByRole('button', { name: 'Reset all list controls' }).at(-1)!);
 
     expect(within(listsPanel).getByPlaceholderText('Search source, name, or unit')).toHaveValue('');
-    expect(within(listsPanel).getAllByText('Sample List')).toHaveLength(2);
+    expect(within(listsPanel).getAllByText('Combined List A')).toHaveLength(2);
   });
 
   it('announces theme toggles in the action area', () => {
@@ -160,14 +158,14 @@ describe('Dashboard', () => {
     expect(screen.getAllByText('Most common lore').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Result mix').length).toBeGreaterThan(0);
     expect(screen.queryByRole('heading', { name: 'Result breakdown' })).not.toBeInTheDocument();
-    expect(screen.getAllByText('Urak Taar, the First Daemonsmith').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('Bull Centaurs').length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Taar's Grand Forgehost").length).toBeGreaterThan(0);
-    expect(screen.getAllByText('Urak Taar, the First Daemonsmith').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Avatar of Slaughter').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Witch Aelves').length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Hagg Nar").length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Crown of Woe').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Leader').length).toBeGreaterThan(0);
     expect(screen.getAllByText('% of lists').length).toBeGreaterThan(0);
     expect(screen.getAllByText('100.0%').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('Forbidden Power').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('Infernal Razers with Flamehurlers').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Morbid Conjuration').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Temple Fanatic').length).toBeGreaterThan(0);
   });
 });

@@ -58,9 +58,9 @@ def _write_scope_fixture(
                 "4-1",
                 "Khailebron",
                 "Primal Energy",
-                "2",
-                "10",
-                '[{"regiment":"Regiment 1","name":"Blood Sisters","points":140,"models":5,"reinforced":false,"notes":[]},{"regiment":"Regiment 1","name":"Khinerai Heartrenders","points":100,"models":5,"reinforced":false,"notes":[]}]',
+                "3",
+                "20",
+                '[{"regiment":"Regiment 1","name":"Witch Aelves","points":110,"models":10,"reinforced":false,"notes":[]},{"regiment":"Regiment 1","name":"Blood Sisters","points":140,"models":5,"reinforced":false,"notes":[]},{"regiment":"Regiment 1","name":"Khinerai Heartrenders","points":100,"models":5,"reinforced":false,"notes":[]}]',
             ],
         ],
     )
@@ -293,23 +293,23 @@ def test_build_site_payload_contains_dataset_scope_and_list_details(
     }
     assert combined_scope["filters"] == {
         "results": ["4-1", "5-0"],
-        "subfactions": ["Industrial Polluters", "Taar's Grand Forgehost"],
+        "subfactions": ["Hagg Nar", "Khailebron"],
     }
     assert combined_scope["statsTables"][0]["key"] == "resultBreakdown"
     assert combined_scope["statsTables"][0]["rows"] == [["4-1", "1"], ["5-0", "1"]]
     assert combined_scope["story"]["coreSignals"][0] == {
         "label": "Top subfaction",
-        "value": "Taar's Grand Forgehost",
+        "value": "Hagg Nar",
         "detail": "1 of 2 lists",
     }
     assert combined_scope["story"]["sharedUnits"][0] == {
-        "name": "Bull Centaurs",
+        "name": "Witch Aelves",
         "listCount": 2,
         "share": "100.0%",
     }
     assert combined_scope["story"]["sharedUnitPairs"] == []
     assert combined_scope["story"]["weeklyTrends"][0]["metric"] == "Unit presence"
-    assert combined_scope["story"]["weeklyTrends"][0]["label"] == "Bull Centaurs"
+    assert combined_scope["story"]["weeklyTrends"][0]["label"] == "Witch Aelves"
     assert combined_scope["story"]["weeklyTrends"][0]["currentValue"] == "100.0%"
     assert [
         point["datasetLabel"]
@@ -319,7 +319,7 @@ def test_build_site_payload_contains_dataset_scope_and_list_details(
         "April 13-19",
     ]
     assert combined_scope["story"]["snapshotTrends"][0]["metric"] == "Unit presence"
-    assert combined_scope["story"]["snapshotTrends"][0]["label"] == "Bull Centaurs"
+    assert combined_scope["story"]["snapshotTrends"][0]["label"] == "Witch Aelves"
     assert combined_scope["story"]["snapshotTrends"][0]["currentValue"] == "100.0%"
     assert combined_scope["story"]["snapshotTrends"][0]["direction"] == "up"
     assert (
@@ -342,8 +342,8 @@ def test_build_site_payload_contains_dataset_scope_and_list_details(
     assert first_list["regiments"] == 1
     assert first_list["unitEntries"] == 3
     assert first_list["models"] == 10
-    assert first_list["units"][0]["name"] == "Bull Centaurs"
-    assert first_list["units"][0]["reinforced"] is True
+    assert first_list["units"][0]["name"] == "Witch Aelves"
+    assert first_list["units"][0]["reinforced"] is False
     assert first_list["units"][0]["notes"] == ["General"]
 
 

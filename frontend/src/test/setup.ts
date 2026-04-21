@@ -13,3 +13,11 @@ Object.defineProperty(window, 'matchMedia', {
 		dispatchEvent: () => false,
 	}),
 });
+Object.defineProperty(window, 'localStorage', {
+	value: {
+		getItem: () => null,
+		setItem: () => null,
+		removeItem: () => null,
+		clear: () => null,
+	},
+});

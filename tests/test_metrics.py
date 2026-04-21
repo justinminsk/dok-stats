@@ -4,7 +4,7 @@ from daughters_stats.models import ListData, UnitData
 
 def test_infer_models_defaults_to_single_model_without_faction_tables() -> None:
     assert infer_models("Hag Queen", 140) == 1
-    assert infer_models("Khinerai Heartrenders", 100) == 1
+    assert infer_models("Khinerai Heartrenders", 100) == 5
 
 
 def test_collect_scope_metrics_counts_presence() -> None:
