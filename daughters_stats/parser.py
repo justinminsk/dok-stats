@@ -115,13 +115,17 @@ def parse_lists(text: str) -> list[ListData]:
                 if current_list is not None:
                     current_list.terrain_name = unit_name
                     current_list.terrain_points = points
-            
+
             if current_list is not None and not current_list.name and pending_name:
                 current_list.name = pending_name
             explicit_models = int(unit_match.group(1)) if unit_match.group(1) else None
-            
+
             is_valid_zero_point_unit = unit_name in {"The Shadow Queen"}
-            if points < 50 and unit_name not in TERRAIN_NAMES and not is_valid_zero_point_unit:
+            if (
+                points < 50
+                and unit_name not in TERRAIN_NAMES
+                and not is_valid_zero_point_unit
+            ):
                 continue
             inferred_models = explicit_models or infer_models(unit_name, points)
             base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
@@ -246,11 +250,15 @@ def parse_lists(text: str) -> list[ListData]:
             current_list.manifestation_lore = value
             continue
 
-        if line.lower().startswith(("battle tactics", "battle tactic", "tactics", "tactic")):
+        if line.lower().startswith(
+            ("battle tactics", "battle tactic", "tactics", "tactic")
+        ):
             if ":" in line:
                 value = line.split(":", 1)[-1].strip()
                 # Split by commas, semicolons, or slashes, and normalize case
-                tactics = [t.strip().title() for t in re.split(r"[,;/]", value) if t.strip()]
+                tactics = [
+                    t.strip().title() for t in re.split(r"[,;/]", value) if t.strip()
+                ]
                 current_list.battle_tactics.extend(tactics)
             continue
 
@@ -259,7 +267,11 @@ def parse_lists(text: str) -> list[ListData]:
             unit_match = UNIT_PATTERN.match(terrain_val)
             if unit_match and current_list is not None:
                 unit_name = normalize_unit_name(unit_match.group(2))
-                points = int(unit_match.group(3).replace(",", "")) if unit_match.group(3) else 0
+                points = (
+                    int(unit_match.group(3).replace(",", ""))
+                    if unit_match.group(3)
+                    else 0
+                )
                 base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
                 current_unit = UnitData(
                     name=unit_name,

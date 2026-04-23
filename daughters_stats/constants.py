@@ -99,11 +99,7 @@ TRAIT_NAMES = {
     "General",
 }
 
-ARTIFACTS = {
-    "Witchbrew",
-    "Crimson Draight",
-    "Darkling Exilir"
-}
+ARTIFACTS = {"Witchbrew", "Crimson Draight", "Darkling Exilir"}
 
 COMMAND_TRAITS = {
     "Murderous Duellist",
