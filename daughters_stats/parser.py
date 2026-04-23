@@ -43,6 +43,10 @@ def _normalize_regiment_name(line: str) -> str | None:
         return None
     if "general's regiment" in lowered:
         return "General's Regiment"
+    if "auxiliary units" in lowered or "auxiliaries" in lowered:
+        return "Auxiliary Units"
+    if "faction terrain" in lowered or "terrain" in lowered:
+        return "Faction Terrain"
 
     regiment_match = re.search(r"regiment\s*#?\s*(\d+)", lowered)
     if regiment_match:
@@ -106,16 +110,18 @@ def parse_lists(text: str) -> list[ListData]:
         if unit_match:
             unit_name = normalize_unit_name(unit_match.group(2))
             points = int(unit_match.group(3).replace(",", ""))
-            # If terrain, record in terrain fields and skip as unit
+            # If terrain, record in terrain fields but DO NOT skip it as a unit
             if unit_name in TERRAIN_NAMES:
                 if current_list is not None:
                     current_list.terrain_name = unit_name
                     current_list.terrain_points = points
-                continue
+            
             if current_list is not None and not current_list.name and pending_name:
                 current_list.name = pending_name
             explicit_models = int(unit_match.group(1)) if unit_match.group(1) else None
-            if points < 50:
+            
+            is_valid_zero_point_unit = unit_name in {"The Shadow Queen"}
+            if points < 50 and unit_name not in TERRAIN_NAMES and not is_valid_zero_point_unit:
                 continue
             inferred_models = explicit_models or infer_models(unit_name, points)
             base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
@@ -238,6 +244,33 @@ def parse_lists(text: str) -> list[ListData]:
             value = line.split("-", 1)[-1] if "-" in line else line.split(":", 1)[-1]
             value = re.sub(r"\s*\([^)]*\)\s*$", "", value).strip()
             current_list.manifestation_lore = value
+            continue
+
+        if line.lower().startswith(("battle tactics", "battle tactic", "tactics", "tactic")):
+            if ":" in line:
+                value = line.split(":", 1)[-1].strip()
+                # Split by commas, semicolons, or slashes, and normalize case
+                tactics = [t.strip().title() for t in re.split(r"[,;/]", value) if t.strip()]
+                current_list.battle_tactics.extend(tactics)
+            continue
+
+        if line.lower().startswith("faction terrain:"):
+            terrain_val = line.split(":", 1)[1].strip()
+            unit_match = UNIT_PATTERN.match(terrain_val)
+            if unit_match and current_list is not None:
+                unit_name = normalize_unit_name(unit_match.group(2))
+                points = int(unit_match.group(3).replace(",", "")) if unit_match.group(3) else 0
+                base_size = UNIT_MODEL_BASE_SIZE.get(unit_name, 1)
+                current_unit = UnitData(
+                    name=unit_name,
+                    points=points,
+                    models=base_size,
+                    regiment="Faction Terrain",
+                    reinforced=False,
+                )
+                current_list.units.append(current_unit)
+                current_list.terrain_name = unit_name
+                current_list.terrain_points = points
             continue
 
         if line.startswith(("•", "~", "*", "-", "[")):

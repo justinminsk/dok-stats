@@ -69,6 +69,9 @@ def collect_scope_metrics(lists_for_scope: list[ListData]) -> ScopeMetrics:
             if trait in WARMACHINE_TRAITS:
                 metrics.warmachine_traits[trait] += 1
 
+        for tactic in army_list.battle_tactics:
+            metrics.battle_tactics[tactic] += 1
+
     metrics.unplayed_units = compute_unplayed_units(
         set(metrics.unit_presence_lists.keys())
     )
