@@ -53,9 +53,17 @@ POINT_INFERENCES = {
     ("High Gladiatrix", 120): 1,
     ("SoG Bloodwrack Shrine", 250): 1,
     ("Slaughter Queen on Cauldron of Blood", 280): 1,
-    ("Krethusa the Croneseer", 180): 1,
+    ("Krethusa the Croneseer", 220): 1,
     ("Khinerai Heartrenders", 100): 5,
     ("Khinerai Lifetakers", 100): 5,
+    ("Bloodwrack Medusa", 140): 1,
+    ("Bloodwrack Shrine", 280): 1,
+    ("Hag Queen", 110): 1,
+    ("SoG Krethusa the Croneseer", 260): 1,
+    ("Melusai Ironscale", 110): 1,
+    ("Khainite Shadowstalkers", 130): 9,
+    ("Witch Aelves", 120): 10,
+    ("Doomfire Warlocks", 150): 5,
     # Add more as needed
 }
 
@@ -73,6 +81,14 @@ UNIT_MODEL_BASE_SIZE = {
     "Krethusa the Croneseer": 1,
     "Khinerai Heartrenders": 5,
     "Khinerai Lifetakers": 5,
+    "Bloodwrack Medusa": 1,
+    "Bloodwrack Shrine": 1,
+    "Hag Queen": 1,
+    "SoG Krethusa the Croneseer": 1,
+    "Melusai Ironscale": 1,
+    "Khainite Shadowstalkers": 9,
+    "Witch Aelves": 10,
+    "Doomfire Warlocks": 5,
     # Add more as needed
 }
 
@@ -81,17 +97,14 @@ UNIT_NAME_ALIASES = {}
 TRAIT_NAMES = {
     "Reinforced",
     "General",
-    "Shadow-Blooded",
 }
 
-ARTIFACTS = {
-    "Witchbrew",
-    "Hand of Khaine",
-    "Khainite Pendant",
-}
+ARTIFACTS = {"Witchbrew", "Crimson Draight", "Darkling Exilir"}
 
 COMMAND_TRAITS = {
-    "Zealous Orator",
+    "Murderous Duellist",
+    "Hand of Khaine",
+    "Shadow-Blooded",
 }
 
 WARMACHINE_TRAITS = set()

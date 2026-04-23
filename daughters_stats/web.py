@@ -714,6 +714,11 @@ def _build_scope_payload(
         ["warmachine_trait", "count"],
         _stats_table_rows(),
     )
+    battle_tactics_rows = _rows_from_csv(
+        scope_dir / "battle_tactics_counts.csv",
+        ["battle_tactic", "count"],
+        _stats_table_rows(),
+    )
     unit_entry_rows = _rows_from_csv(
         scope_dir / "unit_entry_counts.csv",
         ["unit_name", "unit_entries"],
@@ -833,6 +838,12 @@ def _build_scope_payload(
                 "title": "Warmachine traits",
                 "headers": ["Warmachine trait", "Count"],
                 "rows": warmachine_trait_rows,
+            },
+            {
+                "key": "battleTactics",
+                "title": "Battle tactics",
+                "headers": ["Battle tactic", "Count"],
+                "rows": battle_tactics_rows,
             },
             {
                 "key": "unplayedKnownUnits",

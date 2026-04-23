@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20 20:32:55 MDT",
+  "generatedAt": "2026-04-23 07:47:11 MDT",
   "defaultDatasetKey": "current",
   "scopeOrder": [
     "combined",
@@ -162,7 +162,7 @@
               {
                 "units": [
                   "Blood Hags",
-                  "Sisters of Slaughter"
+                  "Shrine of Dark Tribute"
                 ],
                 "listCount": 2,
                 "share": "66.7%"
@@ -210,17 +210,27 @@
                   "100.0%"
                 ],
                 [
-                  "Slaughter Queen on Cauldron of Blood",
-                  "2",
-                  "66.7%"
-                ],
-                [
                   "High Gladiatrix",
                   "2",
                   "66.7%"
                 ],
                 [
                   "Khinerai Lifetakers",
+                  "2",
+                  "66.7%"
+                ],
+                [
+                  "Slaughter Queen on Cauldron of Blood",
+                  "2",
+                  "66.7%"
+                ],
+                [
+                  "Shrine of Dark Tribute",
+                  "2",
+                  "66.7%"
+                ],
+                [
+                  "The Shadow Queen",
                   "2",
                   "66.7%"
                 ],
@@ -240,22 +250,12 @@
                   "33.3%"
                 ],
                 [
-                  "Witch Aelves",
-                  "1",
-                  "33.3%"
-                ],
-                [
                   "SoG Bloodwrack Shrine",
                   "1",
                   "33.3%"
                 ],
                 [
-                  "Slaughter Queen",
-                  "1",
-                  "33.3%"
-                ],
-                [
-                  "Blood Stalkers",
+                  "Witch Aelves",
                   "1",
                   "33.3%"
                 ]
@@ -302,19 +302,19 @@
                   "2"
                 ],
                 [
+                  "The Shadow Queen",
+                  "2"
+                ],
+                [
+                  "Shrine of Dark Tribute",
+                  "2"
+                ],
+                [
                   "SoG Bloodwrack Shrine",
                   "1"
                 ],
                 [
                   "Krethusa the Croneseer",
-                  "1"
-                ],
-                [
-                  "Blood Stalkers",
-                  "1"
-                ],
-                [
-                  "Slaughter Queen",
                   "1"
                 ]
               ]
@@ -368,12 +368,12 @@
                   "2"
                 ],
                 [
-                  "SoG Bloodwrack Shrine",
-                  "1"
+                  "The Shadow Queen",
+                  "2"
                 ],
                 [
-                  "Krethusa the Croneseer",
-                  "1"
+                  "Shrine of Dark Tribute",
+                  "2"
                 ]
               ]
             },
@@ -441,6 +441,32 @@
               "rows": []
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Master The Paths",
+                  "2"
+                ],
+                [
+                  "Restless Energy",
+                  "2"
+                ],
+                [
+                  "Intercept And Recover",
+                  "1"
+                ],
+                [
+                  "Attuned To Ghyran",
+                  "1"
+                ]
+              ]
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -449,7 +475,31 @@
               ],
               "rows": [
                 [
-                  "The Shadow Queen",
+                  "Bloodwrack Medusa",
+                  "1"
+                ],
+                [
+                  "Bloodwrack Shrine",
+                  "1"
+                ],
+                [
+                  "Doomfire Warlocks",
+                  "5"
+                ],
+                [
+                  "Hag Queen",
+                  "1"
+                ],
+                [
+                  "Khainite Shadowstalkers",
+                  "9"
+                ],
+                [
+                  "Melusai Ironscale",
+                  "1"
+                ],
+                [
+                  "SoG Krethusa the Croneseer",
                   "1"
                 ]
               ]
@@ -464,9 +514,9 @@
               "result": "5-0",
               "subfaction": "Coven of Blood",
               "manifestationLore": "Manifestations of Khaine",
-              "regiments": 2,
-              "unitEntries": 10,
-              "models": 57,
+              "regiments": 4,
+              "unitEntries": 12,
+              "models": 59,
               "units": [
                 {
                   "regiment": "General's Regiment",
@@ -503,6 +553,14 @@
                   "notes": []
                 },
                 {
+                  "regiment": "General's Regiment",
+                  "name": "The Shadow Queen",
+                  "points": 0,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
                   "regiment": "Regiment 1",
                   "name": "Slaughter Queen on Cauldron of Blood",
                   "points": 280,
@@ -530,10 +588,18 @@
                   "notes": []
                 },
                 {
-                  "regiment": "Regiment 1",
+                  "regiment": "Auxiliary Units",
                   "name": "Khinerai Lifetakers",
                   "points": 100,
                   "models": 5,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Faction Terrain",
+                  "name": "Shrine of Dark Tribute",
+                  "points": 20,
+                  "models": 1,
                   "reinforced": false,
                   "notes": []
                 }
@@ -547,9 +613,9 @@
               "result": "4-1",
               "subfaction": "Coven of Blood",
               "manifestationLore": "Manifestations of Khaine",
-              "regiments": 2,
-              "unitEntries": 10,
-              "models": 58,
+              "regiments": 3,
+              "unitEntries": 12,
+              "models": 60,
               "units": [
                 {
                   "regiment": "General's Regiment",
@@ -586,6 +652,14 @@
                   "notes": []
                 },
                 {
+                  "regiment": "General's Regiment",
+                  "name": "The Shadow Queen",
+                  "points": 0,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
                   "regiment": "Regiment 1",
                   "name": "Slaughter Queen",
                   "points": 130,
@@ -617,6 +691,14 @@
                   "name": "Sisters of Slaughter",
                   "points": 110,
                   "models": 10,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Faction Terrain",
+                  "name": "Shrine of Dark Tribute",
+                  "points": 20,
+                  "models": 1,
                   "reinforced": false,
                   "notes": []
                 }
@@ -845,17 +927,17 @@
                   "100.0%"
                 ],
                 [
-                  "Sisters of Slaughter",
-                  "2",
-                  "100.0%"
-                ],
-                [
                   "High Gladiatrix",
                   "2",
                   "100.0%"
                 ],
                 [
-                  "Slaughter Queen on Cauldron of Blood",
+                  "Sisters of Slaughter",
+                  "2",
+                  "100.0%"
+                ],
+                [
+                  "Khinerai Lifetakers",
                   "1",
                   "50.0%"
                 ],
@@ -865,12 +947,7 @@
                   "50.0%"
                 ],
                 [
-                  "Witch Aelves",
-                  "1",
-                  "50.0%"
-                ],
-                [
-                  "Khinerai Lifetakers",
+                  "Slaughter Queen on Cauldron of Blood",
                   "1",
                   "50.0%"
                 ],
@@ -880,17 +957,22 @@
                   "50.0%"
                 ],
                 [
-                  "Morathi-Khaine",
+                  "Witch Aelves",
                   "1",
                   "50.0%"
                 ],
                 [
-                  "Blood Hags",
+                  "Shrine of Dark Tribute",
                   "1",
                   "50.0%"
                 ],
                 [
                   "Slaughter Queen",
+                  "1",
+                  "50.0%"
+                ],
+                [
+                  "The Shadow Queen",
                   "1",
                   "50.0%"
                 ],
@@ -954,7 +1036,7 @@
                   "1"
                 ],
                 [
-                  "Slaughter Queen",
+                  "The Shadow Queen",
                   "1"
                 ]
               ]
@@ -1012,7 +1094,7 @@
                   "1"
                 ],
                 [
-                  "Slaughter Queen",
+                  "The Shadow Queen",
                   "1"
                 ]
               ]
@@ -1081,6 +1163,32 @@
               "rows": []
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Master The Paths",
+                  "1"
+                ],
+                [
+                  "Restless Energy",
+                  "1"
+                ],
+                [
+                  "Intercept And Recover",
+                  "1"
+                ],
+                [
+                  "Attuned To Ghyran",
+                  "1"
+                ]
+              ]
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -1089,11 +1197,35 @@
               ],
               "rows": [
                 [
+                  "Bloodwrack Medusa",
+                  "1"
+                ],
+                [
+                  "Bloodwrack Shrine",
+                  "1"
+                ],
+                [
+                  "Doomfire Warlocks",
+                  "5"
+                ],
+                [
+                  "Hag Queen",
+                  "1"
+                ],
+                [
+                  "Khainite Shadowstalkers",
+                  "9"
+                ],
+                [
                   "Khinerai Heartrenders",
                   "5"
                 ],
                 [
-                  "The Shadow Queen",
+                  "Melusai Ironscale",
+                  "1"
+                ],
+                [
+                  "SoG Krethusa the Croneseer",
                   "1"
                 ]
               ]
@@ -1108,9 +1240,9 @@
               "result": "4-1",
               "subfaction": "Coven of Blood",
               "manifestationLore": "Manifestations of Khaine",
-              "regiments": 2,
-              "unitEntries": 10,
-              "models": 58,
+              "regiments": 3,
+              "unitEntries": 12,
+              "models": 60,
               "units": [
                 {
                   "regiment": "General's Regiment",
@@ -1147,6 +1279,14 @@
                   "notes": []
                 },
                 {
+                  "regiment": "General's Regiment",
+                  "name": "The Shadow Queen",
+                  "points": 0,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
                   "regiment": "Regiment 1",
                   "name": "Slaughter Queen",
                   "points": 130,
@@ -1178,6 +1318,14 @@
                   "name": "Sisters of Slaughter",
                   "points": 110,
                   "models": 10,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Faction Terrain",
+                  "name": "Shrine of Dark Tribute",
+                  "points": 20,
+                  "models": 1,
                   "reinforced": false,
                   "notes": []
                 }
@@ -1297,7 +1445,7 @@
             "stats": "reports/current/teams.md",
             "lists": "reports/current/teams-lists.md"
           },
-          "statsSummary": "Most common result is 5-0 (1 lists). Top unit presence is Morathi-Khaine in 1 lists (100.0%). Most common subfaction is Coven of Blood (1 lists). Highest model count unit is Blood Hags (20 models).",
+          "statsSummary": "Most common result is 5-0 (1 lists). Top unit presence is Shrine of Dark Tribute in 1 lists (100.0%). Most common subfaction is Coven of Blood (1 lists). Highest model count unit is Blood Hags (20 models).",
           "filters": {
             "results": [
               "5-0"
@@ -1380,7 +1528,12 @@
               ],
               "rows": [
                 [
-                  "Morathi-Khaine",
+                  "Shrine of Dark Tribute",
+                  "1",
+                  "100.0%"
+                ],
+                [
+                  "The Shadow Queen",
                   "1",
                   "100.0%"
                 ],
@@ -1390,12 +1543,12 @@
                   "100.0%"
                 ],
                 [
-                  "Slaughter Queen on Cauldron of Blood",
+                  "Khinerai Lifetakers",
                   "1",
                   "100.0%"
                 ],
                 [
-                  "Blood Hags",
+                  "Slaughter Queen on Cauldron of Blood",
                   "1",
                   "100.0%"
                 ],
@@ -1405,12 +1558,17 @@
                   "100.0%"
                 ],
                 [
-                  "Sisters of Slaughter",
+                  "Morathi-Khaine",
                   "1",
                   "100.0%"
                 ],
                 [
-                  "Khinerai Lifetakers",
+                  "Blood Hags",
+                  "1",
+                  "100.0%"
+                ],
+                [
+                  "Sisters of Slaughter",
                   "1",
                   "100.0%"
                 ]
@@ -1445,11 +1603,19 @@
                   "1"
                 ],
                 [
+                  "The Shadow Queen",
+                  "1"
+                ],
+                [
                   "Slaughter Queen on Cauldron of Blood",
                   "1"
                 ],
                 [
                   "Sisters of Slaughter",
+                  "1"
+                ],
+                [
+                  "Shrine of Dark Tribute",
                   "1"
                 ]
               ]
@@ -1487,7 +1653,15 @@
                   "1"
                 ],
                 [
+                  "The Shadow Queen",
+                  "1"
+                ],
+                [
                   "Slaughter Queen on Cauldron of Blood",
+                  "1"
+                ],
+                [
+                  "Shrine of Dark Tribute",
                   "1"
                 ]
               ]
@@ -1548,6 +1722,24 @@
               "rows": []
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": [
+                [
+                  "Master The Paths",
+                  "1"
+                ],
+                [
+                  "Restless Energy",
+                  "1"
+                ]
+              ]
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -1560,11 +1752,35 @@
                   "5"
                 ],
                 [
+                  "Bloodwrack Medusa",
+                  "1"
+                ],
+                [
+                  "Bloodwrack Shrine",
+                  "1"
+                ],
+                [
+                  "Doomfire Warlocks",
+                  "5"
+                ],
+                [
+                  "Hag Queen",
+                  "1"
+                ],
+                [
                   "High Gladiatrix",
                   "1"
                 ],
                 [
+                  "Khainite Shadowstalkers",
+                  "9"
+                ],
+                [
                   "Krethusa the Croneseer",
+                  "1"
+                ],
+                [
+                  "Melusai Ironscale",
                   "1"
                 ],
                 [
@@ -1576,7 +1792,7 @@
                   "1"
                 ],
                 [
-                  "The Shadow Queen",
+                  "SoG Krethusa the Croneseer",
                   "1"
                 ]
               ]
@@ -1591,9 +1807,9 @@
               "result": "5-0",
               "subfaction": "Coven of Blood",
               "manifestationLore": "Manifestations of Khaine",
-              "regiments": 2,
-              "unitEntries": 10,
-              "models": 57,
+              "regiments": 4,
+              "unitEntries": 12,
+              "models": 59,
               "units": [
                 {
                   "regiment": "General's Regiment",
@@ -1630,6 +1846,14 @@
                   "notes": []
                 },
                 {
+                  "regiment": "General's Regiment",
+                  "name": "The Shadow Queen",
+                  "points": 0,
+                  "models": 1,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
                   "regiment": "Regiment 1",
                   "name": "Slaughter Queen on Cauldron of Blood",
                   "points": 280,
@@ -1657,10 +1881,18 @@
                   "notes": []
                 },
                 {
-                  "regiment": "Regiment 1",
+                  "regiment": "Auxiliary Units",
                   "name": "Khinerai Lifetakers",
                   "points": 100,
                   "models": 5,
+                  "reinforced": false,
+                  "notes": []
+                },
+                {
+                  "regiment": "Faction Terrain",
+                  "name": "Shrine of Dark Tribute",
+                  "points": 20,
+                  "models": 1,
                   "reinforced": false,
                   "notes": []
                 }

@@ -140,6 +140,12 @@ def write_scope_outputs_to_dirs(
         "warmachine_trait",
         "count",
     )
+    write_counter_csv(
+        scope_dir / "battle_tactics_counts.csv",
+        metrics.battle_tactics,
+        "battle_tactic",
+        "count",
+    )
     write_list_summary(scope_dir / "list_level_summary.csv", lists_for_scope)
 
     (reports_dir / f"{scope_slug}.md").write_text(report_text + "\n", encoding="utf-8")

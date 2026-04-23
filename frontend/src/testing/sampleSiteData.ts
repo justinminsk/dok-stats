@@ -401,6 +401,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -813,6 +822,15 @@ export const sampleSiteData: SiteDataPayload = {
                   "1"
                 ]
               ]
+            },
+            {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
             },
             {
               "key": "unplayedKnownUnits",
@@ -1229,6 +1247,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -1635,6 +1662,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -2032,6 +2068,15 @@ export const sampleSiteData: SiteDataPayload = {
                   "1"
                 ]
               ]
+            },
+            {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
             },
             {
               "key": "unplayedKnownUnits",
@@ -2433,6 +2478,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -2824,6 +2878,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -3206,6 +3269,15 @@ export const sampleSiteData: SiteDataPayload = {
                   "1"
                 ]
               ]
+            },
+            {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
             },
             {
               "key": "unplayedKnownUnits",
@@ -3592,6 +3664,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -3925,6 +4006,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -4251,6 +4341,15 @@ export const sampleSiteData: SiteDataPayload = {
               ]
             },
             {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
+            },
+            {
               "key": "unplayedKnownUnits",
               "title": "Unplayed known units",
               "headers": [
@@ -4575,6 +4674,15 @@ export const sampleSiteData: SiteDataPayload = {
                   "1"
                 ]
               ]
+            },
+            {
+              "key": "battleTactics",
+              "title": "Battle tactics",
+              "headers": [
+                "Battle tactic",
+                "Count"
+              ],
+              "rows": []
             },
             {
               "key": "unplayedKnownUnits",

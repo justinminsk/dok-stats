@@ -9,18 +9,21 @@
 - Result: 4-1
 - Subfaction: Coven of Blood
 - Manifestation lore: Manifestations of Khaine
-- Unit entries: 8
+- Unit entries: 10
 
 ### General's Regiment
 - Morathi-Khaine - 730 pts - 1 models - notes: General
 - Blood Sisters - 280 pts - 10 models - reinforced
 - Blood Stalkers - 150 pts - 5 models
 - Sisters of Slaughter - 110 pts - 10 models
+- The Shadow Queen - 0 pts - 1 models
 ### Regiment 1
 - Slaughter Queen - 130 pts - 1 models - notes: Witchbrew, Shadow-Blooded
 - Blood Hags - 280 pts - 20 models - reinforced
 - High Gladiatrix - 120 pts - 1 models
 - Sisters of Slaughter - 110 pts - 10 models
+### Faction Terrain
+- Shrine of Dark Tribute - 20 pts - 1 models
 
 ## Nick Swope - Look if any of y'all know a giant spellcasting and 50ft tall murder goddess and havent introduced me or set up a date for me I will be extremely disappointed.
 

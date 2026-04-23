@@ -28,6 +28,7 @@ class ScopeMetrics:
     artifacts: MetricCounter = field(default_factory=Counter)
     command_traits: MetricCounter = field(default_factory=Counter)
     warmachine_traits: MetricCounter = field(default_factory=Counter)
+    battle_tactics: MetricCounter = field(default_factory=Counter)
     unplayed_units: list[tuple[str, int]] = field(default_factory=list)
 
 
@@ -41,5 +42,6 @@ class ListData:
     manifestation_lore: str = UNKNOWN
     units: list[UnitData] = field(default_factory=list)
     traits: list[str] = field(default_factory=list)
+    battle_tactics: list[str] = field(default_factory=list)
     terrain_name: str = ""
     terrain_points: int = 0
